@@ -3,14 +3,14 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class B02PageUi extends StatefulWidget {
-  const B02PageUi({super.key});
+class B03PageUi extends StatefulWidget {
+  const B03PageUi({super.key});
 
   @override
-  State<B02PageUi> createState() => _B02PageUiState();
+  State<B03PageUi> createState() => _B03PageUiState();
 }
 
-class _B02PageUiState extends State<B02PageUi> {
+class _B03PageUiState extends State<B03PageUi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,23 +26,23 @@ class _B02PageUiState extends State<B02PageUi> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Login here',
+                'Create Account',
                 style: TextStyle(
                   fontSize: 50,
                   fontWeight: FontWeight.bold,
                   color: Colors.blue[900],
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 10),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 30),
                 child: Text(
-                  "Welcome back you've\nbeen missed!",
+                  "Create an account so you can explore all the\nexisting jobs",
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 20, color: Colors.black),
+                  style: TextStyle(fontSize: 14, color: Colors.black),
                 ),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 40),
               TextField(
                 decoration: InputDecoration(
                   hintText: "Email",
@@ -75,15 +75,24 @@ class _B02PageUiState extends State<B02PageUi> {
                   ),
                 ),
               ),
-              SizedBox(height: 20),
-              Align(
-                alignment: Alignment.centerRight,
-                child: Text(
-                  'Forgot Password?',
-                  style: TextStyle(color: Colors.blue),
+              SizedBox(height: 30),
+              TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                  hintText: 'Confirm Password',
+                  filled: true,
+                  fillColor: Colors.blue[50],
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: BorderSide.none,
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: BorderSide(color: Colors.blue),
+                  ),
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 50),
               ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
@@ -97,7 +106,7 @@ class _B02PageUiState extends State<B02PageUi> {
                   ),
                 ),
                 child: Text(
-                  'Sign in',
+                  'Sign up',
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -109,7 +118,7 @@ class _B02PageUiState extends State<B02PageUi> {
               Align(
                 alignment: Alignment.center,
                 child: Text(
-                  'Create new account',
+                  'Already have an account',
                   style: TextStyle(color: Colors.black),
                 ),
               ),

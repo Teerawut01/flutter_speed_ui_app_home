@@ -154,7 +154,6 @@ class _A02PageUiState extends State<A02PageUi> {
                   ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      shadowColor: Colors.amber,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadiusGeometry.all(
                           Radius.circular(100.0),
@@ -170,7 +169,6 @@ class _A02PageUiState extends State<A02PageUi> {
                   ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      shadowColor: Colors.amber,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadiusGeometry.all(
                           Radius.circular(100.0),
