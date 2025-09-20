@@ -211,7 +211,6 @@ class _C03PageUiState extends State<C03PageUi> {
                   ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      shadowColor: Colors.amber,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadiusGeometry.all(
                           Radius.circular(10.0),
