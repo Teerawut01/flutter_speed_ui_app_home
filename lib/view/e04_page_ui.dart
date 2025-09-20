@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/view/e03_page_ui.dart';
+import 'package:flutter_speed_ui_app/view/e05_page_ui.dart';
 
 class E04PageUi extends StatefulWidget {
   const E04PageUi({super.key});
@@ -74,7 +76,14 @@ class _E04PageUiState extends State<E04PageUi> {
                 ),
                 SizedBox(height: 30),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => E05PageUi(),
+                      ),
+                    );
+                  },
                   child: Container(
                     width: 600,
                     height: 60,
@@ -114,7 +123,14 @@ class _E04PageUiState extends State<E04PageUi> {
                         ),
                       ),
                       InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => E03PageUi(),
+                            ),
+                          );
+                        },
                         child: Text(
                           "Create Account",
                           style: TextStyle(

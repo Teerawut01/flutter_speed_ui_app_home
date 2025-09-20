@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/view/a01_page_ui.dart';
+import 'package:flutter_speed_ui_app/view/b01_page_ui.dart';
+import 'package:flutter_speed_ui_app/view/c01_page_ui.dart';
+import 'package:flutter_speed_ui_app/view/d01_page_ui.dart';
+import 'package:flutter_speed_ui_app/view/e01_page_ui.dart';
 
 class HomeUi extends StatefulWidget {
   const HomeUi({super.key});
@@ -32,7 +37,14 @@ class _HomeUiState extends State<HomeUi> {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const A01PageUi(),
+                  ),
+                );
+              },
               child: Text(
                 'GO to A Page',
                 style: TextStyle(
@@ -54,7 +66,14 @@ class _HomeUiState extends State<HomeUi> {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const B01PageUi(),
+                  ),
+                );
+              },
               child: Text(
                 'GO to B Page',
                 style: TextStyle(
@@ -76,7 +95,14 @@ class _HomeUiState extends State<HomeUi> {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const C01PageUi(),
+                  ),
+                );
+              },
               child: Text(
                 'GO to C Page',
                 style: TextStyle(
@@ -98,7 +124,14 @@ class _HomeUiState extends State<HomeUi> {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const D01PageUi(),
+                  ),
+                );
+              },
               child: Text(
                 'GO to D Page',
                 style: TextStyle(
@@ -120,7 +153,14 @@ class _HomeUiState extends State<HomeUi> {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const E01PageUi(),
+                  ),
+                );
+              },
               child: Text(
                 'GO to E Page',
                 style: TextStyle(

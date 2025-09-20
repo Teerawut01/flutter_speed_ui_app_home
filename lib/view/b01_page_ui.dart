@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/view/b02_page_ui.dart';
+import 'package:flutter_speed_ui_app/view/b03_page_ui.dart';
 
 class B01PageUi extends StatefulWidget {
   const B01PageUi({super.key});
@@ -60,7 +62,14 @@ class _B01PageUiState extends State<B01PageUi> {
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const B02PageUi(),
+                        ),
+                      );
+                    },
                     child: Text(
                       'Login',
                       style: TextStyle(
@@ -82,7 +91,14 @@ class _B01PageUiState extends State<B01PageUi> {
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const B03PageUi(),
+                        ),
+                      );
+                    },
                     child: Text(
                       'Register',
                       style: TextStyle(

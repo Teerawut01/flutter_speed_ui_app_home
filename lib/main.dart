@@ -39,7 +39,7 @@ class _FlutterSpeedUiAppState extends State<FlutterSpeedUiApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: E06PageUi(),
+      home: HomeUi(),
       theme: ThemeData(
         textTheme: GoogleFonts.kanitTextTheme(
           Theme.of(context).textTheme,

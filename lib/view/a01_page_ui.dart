@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/view/a02_page_ui.dart';
 
 class A01PageUi extends StatefulWidget {
   const A01PageUi({super.key});
@@ -84,7 +85,14 @@ class _A01PageUiState extends State<A01PageUi> {
                             ),
                             side: BorderSide(color: Colors.black26),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const A02PageUi(),
+                              ),
+                            );
+                          },
                           child: Text(
                             'Register',
                             style: TextStyle(color: Colors.black),

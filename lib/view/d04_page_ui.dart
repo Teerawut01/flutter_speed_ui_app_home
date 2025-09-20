@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_speed_ui_app/view/d02_page_ui.dart';
+import 'package:flutter_speed_ui_app/view/d05_page_ui.dart';
 
 class D04PageUi extends StatefulWidget {
   const D04PageUi({super.key});
@@ -65,7 +67,14 @@ class _D04PageUiState extends State<D04PageUi> {
               ),
               SizedBox(height: 30),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => D05PageUi(),
+                    ),
+                  );
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.black,
                   fixedSize: Size(
@@ -94,7 +103,14 @@ class _D04PageUiState extends State<D04PageUi> {
                     style: TextStyle(color: Colors.grey),
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => D02PageUi(),
+                        ),
+                      );
+                    },
                     child: Text(
                       'Login Now',
                       style: TextStyle(

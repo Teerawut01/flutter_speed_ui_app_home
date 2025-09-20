@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+// import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_speed_ui_app/view/d02_page_ui.dart';
+import 'package:flutter_speed_ui_app/view/d03_page_ui.dart';
 
 class D01PageUi extends StatefulWidget {
   const D01PageUi({super.key});
@@ -36,7 +38,14 @@ class _D01PageUiState extends State<D01PageUi> {
                 ),
                 SizedBox(height: 40),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => D02PageUi(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.black,
                     fixedSize: Size(
@@ -58,7 +67,14 @@ class _D01PageUiState extends State<D01PageUi> {
                 ),
                 SizedBox(height: 20),
                 OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => D03PageUi(),
+                      ),
+                    );
+                  },
                   style: OutlinedButton.styleFrom(
                     backgroundColor: Colors.white,
                     fixedSize: Size(

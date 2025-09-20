@@ -1,6 +1,7 @@
 // ignore_for_file: sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/view/b03_page_ui.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class B02PageUi extends StatefulWidget {
@@ -108,9 +109,19 @@ class _B02PageUiState extends State<B02PageUi> {
               SizedBox(height: 20),
               Align(
                 alignment: Alignment.center,
-                child: Text(
-                  'Create new account',
-                  style: TextStyle(color: Colors.black),
+                child: InkWell(
+                  onTap: () {
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => B03PageUi(),
+                      ),
+                    );
+                  },
+                  child: Text(
+                    'Create new account',
+                    style: TextStyle(color: Colors.black),
+                  ),
                 ),
               ),
               SizedBox(height: 200),

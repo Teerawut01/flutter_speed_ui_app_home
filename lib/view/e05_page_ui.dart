@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/view/e06_page_ui.dart';
 
 class E05PageUi extends StatefulWidget {
   const E05PageUi({super.key});
@@ -174,7 +175,14 @@ class _E05PageUiState extends State<E05PageUi> {
               ),
               SizedBox(height: 20),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => E06PageUi(),
+                    ),
+                  );
+                },
                 child: Container(
                   width: 600,
                   height: 60,

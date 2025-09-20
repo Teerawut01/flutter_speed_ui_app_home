@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_speed_ui_app/view/d03_page_ui.dart';
+import 'package:flutter_speed_ui_app/view/d04_page_ui.dart';
 
 class D02PageUi extends StatefulWidget {
   const D02PageUi({super.key});
@@ -72,9 +74,19 @@ class _D02PageUiState extends State<D02PageUi> {
               SizedBox(height: 10),
               Align(
                 alignment: Alignment.centerRight,
-                child: Text(
-                  'Forgot Password?',
-                  style: TextStyle(color: Colors.black),
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => D04PageUi(),
+                      ),
+                    );
+                  },
+                  child: Text(
+                    'Forgot Password?',
+                    style: TextStyle(color: Colors.black),
+                  ),
                 ),
               ),
               SizedBox(height: 30),
@@ -170,7 +182,14 @@ class _D02PageUiState extends State<D02PageUi> {
                     style: TextStyle(color: Colors.grey),
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => D03PageUi(),
+                        ),
+                      );
+                    },
                     child: Text(
                       'Register now',
                       style: TextStyle(

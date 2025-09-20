@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_speed_ui_app/view/c03_page_ui.dart';
 
 class C02PageUi extends StatefulWidget {
   const C02PageUi({super.key});
@@ -166,6 +167,7 @@ class _C02PageUiState extends State<C02PageUi> {
                   ),
                 ],
               ),
+              SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -174,7 +176,14 @@ class _C02PageUiState extends State<C02PageUi> {
                     style: TextStyle(color: Colors.grey),
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => C03PageUi(),
+                        ),
+                      );
+                    },
                     child: Text(
                       'SIGN UP',
                       style: TextStyle(

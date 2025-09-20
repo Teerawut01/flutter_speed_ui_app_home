@@ -1,6 +1,7 @@
 // ignore_for_file: sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/view/b02_page_ui.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class B03PageUi extends StatefulWidget {
@@ -117,9 +118,19 @@ class _B03PageUiState extends State<B03PageUi> {
               SizedBox(height: 20),
               Align(
                 alignment: Alignment.center,
-                child: Text(
-                  'Already have an account',
-                  style: TextStyle(color: Colors.black),
+                child: InkWell(
+                  onTap: () {
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => B02PageUi(),
+                      ),
+                    );
+                  },
+                  child: Text(
+                    'Already have an account',
+                    style: TextStyle(color: Colors.black),
+                  ),
                 ),
               ),
               SizedBox(height: 200),

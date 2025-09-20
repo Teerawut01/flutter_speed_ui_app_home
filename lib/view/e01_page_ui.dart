@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/view/e02_page_ui.dart';
 
 class E01PageUi extends StatefulWidget {
   const E01PageUi({super.key});
@@ -54,7 +55,14 @@ class _E01PageUiState extends State<E01PageUi> {
               ),
               SizedBox(height: 30),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const E02PageUi(),
+                    ),
+                  );
+                },
                 style: ElevatedButton.styleFrom(
                   shadowColor: Colors.amber,
                   elevation: 10,

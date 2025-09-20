@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_speed_ui_app/view/c02_page_ui.dart';
 
 class C03PageUi extends StatefulWidget {
   const C03PageUi({super.key});
@@ -226,6 +227,7 @@ class _C03PageUiState extends State<C03PageUi> {
                   ),
                 ],
               ),
+              SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -233,10 +235,16 @@ class _C03PageUiState extends State<C03PageUi> {
                     'Don\'t have an account?',
                     style: TextStyle(color: Colors.grey),
                   ),
+                  SizedBox(width: 5),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => C02PageUi()),
+                      );
+                    },
                     child: Text(
-                      'SIGN UP',
+                      'LONG IN',
                       style: TextStyle(
                         color: Colors.green[700],
                         fontWeight: FontWeight.bold,

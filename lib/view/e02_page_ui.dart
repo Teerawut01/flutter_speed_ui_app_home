@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/view/e03_page_ui.dart';
+import 'package:flutter_speed_ui_app/view/e04_page_ui.dart';
 
 class E02PageUi extends StatefulWidget {
   const E02PageUi({super.key});
@@ -74,7 +76,14 @@ class _E02PageUiState extends State<E02PageUi> {
                 Align(
                   alignment: AlignmentGeometry.centerRight,
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => E04PageUi(),
+                        ),
+                      );
+                    },
                     child: Text(
                       'Forgot Password',
                       style: TextStyle(
@@ -185,7 +194,14 @@ class _E02PageUiState extends State<E02PageUi> {
                         ),
                       ),
                       InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => E03PageUi(),
+                            ),
+                          );
+                        },
                         child: Text(
                           "Create Account",
                           style: TextStyle(
